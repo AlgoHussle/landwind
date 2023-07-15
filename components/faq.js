@@ -1,6 +1,18 @@
+import { useState } from 'react';
 import Link from 'next/link';
 
 const faq = () => {
+  const [isOpen, setIsOpen] = useState({
+    accordion1: false,
+    accordion2: false,
+    accordion3: false,
+    accordion4: false,
+  });
+
+  const toggleAccordion = (accordion) => {
+    setIsOpen({ ...isOpen, [accordion]: !isOpen[accordion] });
+  };
+
   return (
     <section id="TEAM" className="bg-white dark:bg-gray-900">
       <div className="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-24 lg:px-6 ">
@@ -23,16 +35,17 @@ const faq = () => {
           >
             <h3 id="accordion-flush-heading-1">
               <button
+                onClick={() => toggleAccordion('accordion1')}
                 type="button"
                 className="flex items-center justify-between w-full py-5 font-medium text-left text-gray-900 bg-white border-b border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white"
                 data-accordion-target="#accordion-flush-body-1"
-                aria-expanded="true"
+                aria-expanded={isOpen.accordion1}
                 aria-controls="accordion-flush-body-1"
               >
                 <span>Can I use Landwind in open-source projects?</span>
                 <svg
                   data-accordion-icon=""
-                  className="w-6 h-6 rotate-180 shrink-0"
+                  className={`w-6 h-6 ${isOpen.accordion1 ? 'rotate-180' : ''} shrink-0`}
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +60,7 @@ const faq = () => {
             </h3>
             <div
               id="accordion-flush-body-1"
-              className=""
+              className={`${isOpen.accordion1 ? '' : 'hidden'}`}
               aria-labelledby="accordion-flush-heading-1"
             >
               <div className="py-5 border-b border-gray-200 dark:border-gray-700">
@@ -71,16 +84,17 @@ const faq = () => {
             </div>
             <h3 id="accordion-flush-heading-2">
               <button
+                onClick={() => toggleAccordion('accordion2')}
                 type="button"
                 className="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
                 data-accordion-target="#accordion-flush-body-2"
-                aria-expanded="false"
+                aria-expanded={isOpen.accordion2}
                 aria-controls="accordion-flush-body-2"
               >
                 <span>Is there a Figma file available?</span>
                 <svg
                   data-accordion-icon=""
-                  className="w-6 h-6 shrink-0"
+                  className={`w-6 h-6 ${isOpen.accordion2 ? 'rotate-180' : ''} shrink-0`}
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +109,7 @@ const faq = () => {
             </h3>
             <div
               id="accordion-flush-body-2"
-              className="hidden"
+              className={`${isOpen.accordion2 ? '' : 'hidden'}`}
               aria-labelledby="accordion-flush-heading-2"
             >
               <div className="py-5 border-b border-gray-200 dark:border-gray-700">
@@ -119,10 +133,11 @@ const faq = () => {
             </div>
             <h3 id="accordion-flush-heading-3">
               <button
+                onClick={() => toggleAccordion('accordion3')}
                 type="button"
                 className="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
                 data-accordion-target="#accordion-flush-body-3"
-                aria-expanded="false"
+                aria-expanded={isOpen.accordion3}
                 aria-controls="accordion-flush-body-3"
               >
                 <span>
@@ -130,7 +145,7 @@ const faq = () => {
                 </span>
                 <svg
                   data-accordion-icon=""
-                  className="w-6 h-6 shrink-0"
+                  className={`w-6 h-6 ${isOpen.accordion3 ? 'rotate-180' : ''} shrink-0`}
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -145,57 +160,35 @@ const faq = () => {
             </h3>
             <div
               id="accordion-flush-body-3"
-              className="hidden"
+              className={`${isOpen.accordion3 ? '' : 'hidden'}`}
               aria-labelledby="accordion-flush-heading-3"
             >
               <div className="py-5 border-b border-gray-200 dark:border-gray-700">
                 <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  The main difference is that the core components from Landwind
-                  are open source under the MIT license, whereas Tailwind UI is
-                  a paid product. Another difference is that Landwind relies on
-                  smaller and standalone components, whereas Tailwind UI offers
-                  sections of pages.
+                  Landwind and Tailwind UI are both libraries of interactive
+                  components built on top of Tailwind CSS.
                 </p>
-                <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  However, we actually recommend using both Landwind, Landwind
-                  Pro, and even Tailwind UI as there is no technical reason
-                  stopping you from using the best of two worlds.
+                <p className="text-gray-500 dark:text-gray-400">
+                  The main difference is that Landwind is open-source and free
+                  to use while Tailwind UI is a commercial product. Landwind
+                  also provides a Figma design system file while Tailwind UI
+                  does not.
                 </p>
-                <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  Learn more about these technologies:
-                </p>
-                <ul className="pl-5 text-gray-500 list-disc dark:text-gray-400">
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-purple-600 dark:text-purple-500 hover:underline"
-                    >
-                      Landwind Pro
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-purple-600 dark:text-purple-500 hover:underline"
-                    >
-                      Tailwind UI
-                    </Link>
-                  </li>
-                </ul>
               </div>
             </div>
             <h3 id="accordion-flush-heading-4">
               <button
+                onClick={() => toggleAccordion('accordion4')}
                 type="button"
                 className="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
                 data-accordion-target="#accordion-flush-body-4"
-                aria-expanded="false"
+                aria-expanded={isOpen.accordion4}
                 aria-controls="accordion-flush-body-4"
               >
-                <span>What about browser support?</span>
+                <span>How can I contribute to Landwind?</span>
                 <svg
                   data-accordion-icon=""
-                  className="w-6 h-6 shrink-0"
+                  className={`w-6 h-6 ${isOpen.accordion4 ? 'rotate-180' : ''} shrink-0`}
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -210,43 +203,26 @@ const faq = () => {
             </h3>
             <div
               id="accordion-flush-body-4"
-              className="hidden"
+              className={`${isOpen.accordion4 ? '' : 'hidden'}`}
               aria-labelledby="accordion-flush-heading-4"
             >
               <div className="py-5 border-b border-gray-200 dark:border-gray-700">
                 <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  The main difference is that the core components from Landwind
-                  are open source under the MIT license, whereas Tailwind UI is
-                  a paid product. Another difference is that Landwind relies on
-                  smaller and standalone components, whereas Tailwind UI offers
-                  sections of pages.
+                  Landwind is an open-source project and we welcome all
+                  contributions from the community.
                 </p>
-                <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  However, we actually recommend using both Landwind, Landwind
-                  Pro, and even Tailwind UI as there is no technical reason
-                  stopping you from using the best of two worlds.
+                <p className="text-gray-500 dark:text-gray-400">
+                  You can contribute by reporting bugs, suggesting new features,
+                  improving documentation, submitting pull requests to fix bugs
+                  or add features, and more. Check out our{' '}
+                  <Link
+                    href="#"
+                    className="text-purple-600 dark:text-purple-500 hover:underline"
+                  >
+                    contributing guide
+                  </Link>{' '}
+                  to get started.
                 </p>
-                <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  Learn more about these technologies:
-                </p>
-                <ul className="pl-5 text-gray-500 list-disc dark:text-gray-400">
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-purple-600 dark:text-purple-500 hover:underline"
-                    >
-                      Landwind Pro
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-purple-600 dark:text-purple-500 hover:underline"
-                    >
-                      Tailwind UI
-                    </Link>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
