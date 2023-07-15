@@ -151,7 +151,7 @@ const footer = () => {
             Landwind
           </Link>
           <span className="block text-sm text-center text-gray-500 dark:text-gray-400">
-            © 2021-2022 Landwind™. All Rights Reserved. Built with{' '}
+            © 2023-2024 Pantheon™. All Rights Reserved. Built with{' '}
             <Link
               href="https://flowbite.com"
               className="text-purple-600 hover:underline dark:text-purple-500"

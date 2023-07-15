@@ -12,8 +12,8 @@ const main = () => {
               data-aos="fade-right"
               className="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white"
             >
-              Building digital <br />
-              products & brands.
+                 Innovative Tokenomics <br />
+              NFTS & DeFi.
             </h1>
             <p
               data-aos="fade-right"
@@ -21,26 +21,7 @@ const main = () => {
               data-aos-duration="800"
               className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
             >
-              This free and open-source landing page template was built using
-              the utility classes from{' '}
-              <Link href="https://tailwindcss.com" className="hover:underline">
-                Tailwind CSS
-              </Link>{' '}
-              and based on the components from the{' '}
-              <Link
-                href="https://flowbite.com/docs/getting-started/introduction/"
-                className="hover:underline"
-              >
-                Flowbite Library
-              </Link>{' '}
-              and the{' '}
-              <Link
-                href="https://flowbite.com/blocks/"
-                className="hover:underline"
-              >
-                Blocks System
-              </Link>
-              .
+              Pantheon, deploying on Metis, is set to disrupt the DeFi landscape by introducing a collateral-backed token and an exclusive NFT collection, forming an innovative ecosystem that merges tokenomics, gamification, and novel DeFi products.
             </p>
             <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4 ">
               <Link

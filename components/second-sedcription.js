@@ -89,7 +89,7 @@ const secondsedcription = () => {
               99.99% uptime
             </h3>
             <p className="font-light text-gray-500 dark:text-gray-400">
-              For Landwind, with zero maintenance downtime
+              For Pantheon, with zero maintenance downtime
             </p>
           </div>
           <div data-aos="fade-left">
@@ -123,7 +123,7 @@ const secondsedcription = () => {
               100+ countries
             </h3>
             <p className="font-light text-gray-500 dark:text-gray-400">
-              Have used Landwind to create functional websites
+              Have used Pantheon to create functional websites
             </p>
           </div>
           <div data-aos="fade-left">
