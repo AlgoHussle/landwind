@@ -94,7 +94,7 @@ const main = () => {
             <Link data-aos="fade-right" href="#" className="flex items-center lg:justify-center">
               <svg
                 className="h-8 hover:text-gray-900 dark:hover:text-white"
-                viewBox="0 0 151 34"
+                viewBox="0 0 15 1 34"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
               >

@@ -144,22 +144,23 @@ const footer = () => {
             className="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white"
           >
             <img
-              src="/logo.svg"
+              src="/logo.png"
               className="h-6 mr-3 sm:h-9"
               alt="Landwind Logo"
             />
-            Landwind
+            Pantheon
           </Link>
           <span className="block text-sm text-center text-gray-500 dark:text-gray-400">
-            © 2023-2024 Pantheon™. All Rights Reserved. Built with{' '}
+            © 2023-2024 Pantheon™. All Rights Reserved. Built by{' '}
             <Link
-              href="https://flowbite.com"
+              href="https://algocodes.xyz/"
               className="text-purple-600 hover:underline dark:text-purple-500"
             >
-              Flowbite
+              Umbrella Labs
             </Link>{' '}
             and{' '}
             <Link
+              target="blank"
               href="https://tailwindcss.com"
               className="text-purple-600 hover:underline dark:text-purple-500"
             >
