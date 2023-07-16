@@ -5,7 +5,7 @@ import SDescription from '../components/second-sedcription';
 import Quote from '../components/quote';
 import Card from '../components/card';
 import FAQ from '../components/faq';
-import FreeTrial from '../components/freeTrial';
+import FreeTrial from '../components/LaunchApp';
 import Footer from '../components/footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

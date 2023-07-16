@@ -116,22 +116,12 @@ const footer = () => {
             <ul className="text-gray-500 dark:text-gray-400">
               <li className="mb-4">
                 <Link href="#" className="hover:underline">
-                  iOS
+                  iOS App store soon
                 </Link>
               </li>
               <li className="mb-4">
                 <Link href="#" className="hover:underline">
-                  Android
-                </Link>
-              </li>
-              <li className="mb-4">
-                <Link href="#" className="hover:underline">
-                  Windows
-                </Link>
-              </li>
-              <li className="mb-4">
-                <Link href="#" className="hover:underline">
-                  MacOS
+                  Google Play store soon
                 </Link>
               </li>
             </ul>
@@ -158,21 +148,7 @@ const footer = () => {
             >
               Umbrella Labs
             </Link>{' '}
-            and{' '}
-            <Link
-              target="blank"
-              href="https://tailwindcss.com"
-              className="text-purple-600 hover:underline dark:text-purple-500"
-            >
-              Tailwind CSS
-            </Link>
-            . Distributed by{' '}
-            <Link
-              href="#"
-              className="text-purple-600 hover:underline dark:text-purple-500"
-            >
-              IO
-            </Link>
+            
           </span>
           <ul className="flex justify-center mt-5 space-x-5">
             <li>

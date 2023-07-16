@@ -24,9 +24,7 @@ const quote = () => {
             data-aos-once="false"
           >
             <p className="text-xl font-medium text-gray-900 md:text-2xl dark:text-white">
-              Pantheon is just awesome. It contains tons of predesigned
-              components and pages starting from login screen to complex
-              dashboard. Perfect choice for your next SaaS application.
+            Our unique mint/burn mechanism is more than a feature; it's a philosophy. We believe in a token that only goes up against its backing asset, creating a win-win situation for all $PANTHEON holders. 
             </p>
           </blockquote>
           <figcaption className="flex items-center justify-center mt-6 space-x-3">
@@ -42,7 +40,7 @@ const quote = () => {
                 data-aos-duration="800"
                 className="pr-3 font-medium text-gray-900 dark:text-white"
               >
-                Soheib Kiani
+                Maximus
               </div>
               <div
                 data-aos="fade-left"

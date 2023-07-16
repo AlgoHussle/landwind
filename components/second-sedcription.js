@@ -123,7 +123,7 @@ const secondsedcription = () => {
               100+ countries
             </h3>
             <p className="font-light text-gray-500 dark:text-gray-400">
-              Have used Pantheon to create functional websites
+              Are using Pantheon's ecosystem
             </p>
           </div>
           <div data-aos="fade-left">

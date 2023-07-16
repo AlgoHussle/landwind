@@ -37,12 +37,12 @@ const faq = () => {
               <button
                 onClick={() => toggleAccordion('accordion1')}
                 type="button"
-                className="flex items-center justify-between w-full py-5 font-medium text-left text-gray-900 bg-white border-b border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white"
+                className="flex items-center justify-between w-full py-5 font-bold text-left text-white bg-white border-b border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white"
                 data-accordion-target="#accordion-flush-body-1"
                 aria-expanded={isOpen.accordion1}
                 aria-controls="accordion-flush-body-1"
               >
-                <span>Can I use Landwind in open-source projects?</span>
+                <span>What is Pantheon and how does it work</span>
                 <svg
                   data-accordion-icon=""
                   className={`w-6 h-6 ${isOpen.accordion1 ? 'rotate-180' : ''} shrink-0`}
@@ -65,9 +65,7 @@ const faq = () => {
             >
               <div className="py-5 border-b border-gray-200 dark:border-gray-700">
                 <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  Landwind is an open-source library of interactive components
-                  built on top of Tailwind CSS including buttons, dropdowns,
-                  modals, navbars, and more.
+                PANTHEON is a token that we are planning to launch. It will be fully backed by a collateral and is designed to only increase in value against the collateral. This is achieved through a mint/burn mechanism that takes advantage of arbitrage opportunities. The token can be minted with Metis and can be burned to redeem Metis.
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
                   Check out this guide to learn how to{' '}
@@ -77,8 +75,7 @@ const faq = () => {
                   >
                     get started
                   </Link>{' '}
-                  and start developing websites even faster with components on
-                  top of Tailwind CSS.
+                  and start taking part in the Pantheon ecosystem
                 </p>
               </div>
             </div>
@@ -86,12 +83,12 @@ const faq = () => {
               <button
                 onClick={() => toggleAccordion('accordion2')}
                 type="button"
-                className="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                className="flex items-center justify-between w-full py-5 font-bold text-left text-white bg-white border-b border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white"
                 data-accordion-target="#accordion-flush-body-2"
                 aria-expanded={isOpen.accordion2}
                 aria-controls="accordion-flush-body-2"
               >
-                <span>Is there a Figma file available?</span>
+                <span>Why is $PANTHEON backed by Metis instead of Ethereum?</span>
                 <svg
                   data-accordion-icon=""
                   className={`w-6 h-6 ${isOpen.accordion2 ? 'rotate-180' : ''} shrink-0`}
@@ -114,20 +111,7 @@ const faq = () => {
             >
               <div className="py-5 border-b border-gray-200 dark:border-gray-700">
                 <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  Landwind is first conceptualized and designed using the Figma
-                  software so everything you see in the library has a design
-                  equivalent in our Figma file.
-                </p>
-                <p className="text-gray-500 dark:text-gray-400">
-                  Check out the{' '}
-                  <Link
-                    href="#"
-                    className="text-purple-600 dark:text-purple-500 hover:underline"
-                  >
-                    Figma design system
-                  </Link>{' '}
-                  based on the utility classes from Tailwind CSS and components
-                  from Landwind.
+                We believe Metis has more upside potential and is more volatile, which is beneficial for our purposes. Metis is the gas token for the Metis Ethereum Layer 2, which is the chain we are planning to deploy at.
                 </p>
               </div>
             </div>
@@ -135,14 +119,13 @@ const faq = () => {
               <button
                 onClick={() => toggleAccordion('accordion3')}
                 type="button"
-                className="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                className="flex items-center justify-between w-full py-5 font-bold text-left text-white bg-white border-b border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white"
                 data-accordion-target="#accordion-flush-body-3"
                 aria-expanded={isOpen.accordion3}
                 aria-controls="accordion-flush-body-3"
               >
                 <span>
-                  What are the differences between Landwind and Tailwind UI?
-                </span>
+                How does the minting and burning process affect the price of $PANTHEON?                </span>
                 <svg
                   data-accordion-icon=""
                   className={`w-6 h-6 ${isOpen.accordion3 ? 'rotate-180' : ''} shrink-0`}
@@ -165,14 +148,10 @@ const faq = () => {
             >
               <div className="py-5 border-b border-gray-200 dark:border-gray-700">
                 <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  Landwind and Tailwind UI are both libraries of interactive
-                  components built on top of Tailwind CSS.
+                The price of $PANTHEON can only go up against its backing asset. This is because there are taxes for minting and burning. 
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
-                  The main difference is that Landwind is open-source and free
-                  to use while Tailwind UI is a commercial product. Landwind
-                  also provides a Figma design system file while Tailwind UI
-                  does not.
+                If someone mints, the price goes up. If someone burns, the price still goes up. However, everyone can still trade $PANTHEON without taxes in normal liquidity pools.
                 </p>
               </div>
             </div>
@@ -180,12 +159,12 @@ const faq = () => {
               <button
                 onClick={() => toggleAccordion('accordion4')}
                 type="button"
-                className="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                className="flex items-center justify-between w-full py-5 font-bold text-left text-white bg-white border-b border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white"
                 data-accordion-target="#accordion-flush-body-4"
                 aria-expanded={isOpen.accordion4}
                 aria-controls="accordion-flush-body-4"
               >
-                <span>How can I contribute to Landwind?</span>
+                <span>What are the future plans for the project after the token launch?</span>
                 <svg
                   data-accordion-icon=""
                   className={`w-6 h-6 ${isOpen.accordion4 ? 'rotate-180' : ''} shrink-0`}
@@ -208,18 +187,15 @@ const faq = () => {
             >
               <div className="py-5 border-b border-gray-200 dark:border-gray-700">
                 <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  Landwind is an open-source project and we welcome all
-                  contributions from the community.
+                After the token launch, we plan to launch a 100 pieces NFT collection, which will be the center of the whole ecosystem. The NFTs will receive a big portion of the revenue from the token and will have massive utilities in the next steps. 
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
-                  You can contribute by reporting bugs, suggesting new features,
-                  improving documentation, submitting pull requests to fix bugs
-                  or add features, and more. Check out our{' '}
+                We will also launch a collection of characters and items NFTs to add some gamification. In the long term, we will start delivering useful DeFi products that will stream revenue to the NFTs. Check out{' '}
                   <Link
                     href="#"
                     className="text-purple-600 dark:text-purple-500 hover:underline"
                   >
-                    contributing guide
+                    PANTHEON Eco-system
                   </Link>{' '}
                   to get started.
                 </p>

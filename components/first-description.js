@@ -16,12 +16,11 @@ const firstdescription = () => {
               data-aos-once="false"
               className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
             >
-              Work with tools you already use
+              Harness the Power of Metis
             </h2>
             <p data-aos="fade-right" className="mb-8 font-light lg:text-xl">
-              Deliver great service experiences fast - without the complexity of
-              traditional ITSM solutions. Accelerate critical development work,
-              eliminate toil, and deploy changes with ease.
+            Experience the potential of Metis, a Layer 2 Ethereum chain, with our token. We're here to help you navigate this new frontier with ease and efficiency.
+            
             </p>
 
             <ul
